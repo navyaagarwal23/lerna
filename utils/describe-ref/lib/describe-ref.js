@@ -15,19 +15,17 @@ function getArgs(options, includeMergedTags) {
     // always return full result, helps identify existing release
     "--long",
     // annotate if uncommitted changes present
-    "--dirty",
-    // prefer tags originating on upstream branch
-    "--first-parent",
+    "--dirty"
   ];
 
   if (options.match) {
     args.push("--match", options.match);
   }
 
-  if (includeMergedTags) {
-    // we want to consider all tags, also from merged branches
-    args = args.filter(arg => arg !== "--first-parent");
-  }
+//   if (includeMergedTags) {
+//     // we want to consider all tags, also from merged branches
+//     args = args.filter(arg => arg !== "--first-parent");
+//   }
 
   return args;
 }
