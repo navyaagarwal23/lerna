@@ -36,7 +36,7 @@
 - [Global Flags](./core/global-options)
 - [Filter Flags](./core/filter-options)
 
-## About
+## About Navya
 
 Splitting up large codebases into separate independently versioned packages
 is extremely useful for code sharing. However, making changes across many
